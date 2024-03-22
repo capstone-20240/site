@@ -1,0 +1,70 @@
+/* ARgraphs.css */
+
+.argraphs-title {
+    font-size: 60px;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+}
+
+.argraphs-intro-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space the children evenly */
+    flex-wrap: wrap; /* Allow containers to wrap to the next line */
+}
+
+.argraphs-container-left,
+.argraphs-container-right {
+    flex-basis: calc(50% - 20px); /* Each container takes up half of the available space with some spacing */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in container size */
+    margin-left: 10px; /* Adjust margin for spacing */
+    background-color: #ffffff; /* Background color for both containers */
+}
+
+.argraphs-container-right {
+    margin-left: 0; /* Remove left margin for the right container */
+    margin-right: 10px; /* Adjust margin for spacing */
+    background-color: #ffffff; /* Background color for the right container */
+}
+
+/* Style for the input box */
+.argraphs-input {
+    width: 100%; /* Set the width to 100% to fill the container */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 16px; /* Adjust font size */
+    border: 3px solid #100d0d;
+    margin-top: 50px;
+}
+
+/* Style for the "Begin" button */
+.argraphs-button {
+    padding: 12px 24px; /* Add padding for spacing */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 600;
+    background-color: white;
+}
+
+/* ARgraphs.css */
+
+.graph-container {
+    width: 100%;
+    max-width: 100%; /* Ensure the container does not exceed the screen width */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.graph-container canvas {
+    width: 100%; /* Make sure the canvas fills the container */
+    height: auto; /* Allow the height to adjust proportionally */
+    max-width: 100%; /* Ensure the canvas does not exceed the container width */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .argraphs-container-left,
+    .argraphs-container-right {
+        flex-basis: calc(100% - 20px); /* Each container takes up full width with some spacing */
+        margin-bottom: 20px; /* Add margin between containers */
+    }
+}

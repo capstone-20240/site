@@ -1,0 +1,38 @@
+/* resetButtonStyles.css */
+
+/* Style for the button */
+.reset-button {
+  /* Adjust the font size and padding to make the button bigger */
+  font-size: 1.2em;
+  padding: 12px 24px;
+  border-radius: 8px; /* Rounded edges */
+  border: 2px solid black; /* Black border */
+  background-color: yellow; /* Red color */
+  color: black;
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+
+  /* Apply a nice font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hover effect */
+.reset-button:hover {
+  background-color: #D70000; /* Darker red on hover */
+}
+
+.large-input {
+  width: 80%; /* Adjust the width percentage as needed */
+  max-width: 400px; /* Set a maximum width to limit the size on larger screens */
+  height: 40px; /* Adjust the height as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  border: 1px solid #ccc; /* Adjust the border as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}

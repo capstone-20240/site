@@ -1,0 +1,72 @@
+  .header {
+    font-size: 45px;
+    text-align: left;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    font-weight: 550;
+  }
+/* intro.css */
+
+.title{
+    font-size: 60px;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+}
+.title2{
+    font-size: 55px;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+}
+
+.intro-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space the children evenly */
+    flex-wrap: wrap; /* Allow containers to wrap to next line */
+}
+
+.container-left,
+.container-right {
+    flex-basis: calc(50% - 20px); /* Each container takes up half of the available space with some spacing */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #100d0d; /* Add border for visualization */
+    box-sizing: border-box; /* Include padding and border in container size */
+}
+
+.container-left {
+    background-color: #7007da; /* Background color for left container */
+}
+
+.container-right {
+    background-color: #6f00ff; /* Background color for right container */
+}
+
+/* intro.css */
+
+/* Style for the input box */
+input[type="text"] {
+    width: 50%; /* Set the width to 100% to fill the container */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 16px; /* Adjust font size */
+    border: 3px solid #100d0d;
+    margin-top: 50px;
+}
+
+/* Style for the "Begin" button */
+button {
+    padding: 12px 24px; /* Add padding for spacing */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 600;
+    background-color: white;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .container-left,
+    .container-right {
+        flex-basis: calc(100% - 20px); /* Each container takes up full width with some spacing */
+        margin-bottom: 20px; /* Add margin between containers */
+    }
+}
